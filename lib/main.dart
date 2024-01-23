@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:isolate_example/async_vs_isolate.dart';
 import 'package:isolate_example/isolate_example_page.dart';
+import 'package:isolate_example/simple_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AsyncVSIsolate(),
+      // home: AsyncVSIsolate(),
+      home: SimpleIsolateExample(),
     );
   }
 }
